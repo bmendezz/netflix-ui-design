@@ -236,22 +236,31 @@ padding-left: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10000;
+    z-index: 100000;
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content:center;
     align-items: center;
     backdrop-filter: blur(20px);
     visibility: hidden;
-    opacity: 0;
+    
 }
 .trailer
 {
     max-width: 900px;
-    outline: none
+    outline: none;
 }
 
-.close 
-{
-
+.trailer video {
+    max-width: 900px;
+    outline:none;
+    
+}
+.close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
 }
